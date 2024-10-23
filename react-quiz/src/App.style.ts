@@ -61,7 +61,7 @@ export const Wrapper = styled.div`
     margin:20px;
     }
 
-    .start,.next{
+    .start,.next,.score{
     cursor:pointer;
     background:linear-gradient(180deg,$fff,#ffcc91);
     border:2px solid #d38558;
@@ -71,6 +71,12 @@ export const Wrapper = styled.div`
     margin:20px;
     padding:0 40px;
     }
+
+    .score{
+    background-color:black;
+    
+    }
+
 
     .start{
     max-width:200px;

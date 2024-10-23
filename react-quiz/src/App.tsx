@@ -14,7 +14,7 @@ export type AnserObject = {
 }
 
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 2;
 
 function App() {
   const [loading,setLoading]=useState(false);
@@ -88,9 +88,9 @@ function App() {
         </button>
         ):null}
 
-        {!gameover? <p className='score'>
-          Score:{score}
-          </p>:null }
+        {!gameover && userAnswers.length===TOTAL_QUESTIONS ? (
+           <p className='score'>Score : {score}</p>
+        ):null}
 
         {loading && <p>Loading Questions...</p>}
 
