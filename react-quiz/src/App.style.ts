@@ -8,13 +8,16 @@ height:100%;
 }
 
 body{
-background-image:url(${BGimage});
-background-size:cover;
-margin:0;
-padding:0;
-display:flex;
-justify-content:center;
-height:150px;
+background-image: url(${BGimage});
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Ensures the body takes up the full viewport height */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 *{
 box-sizing:border-box;
