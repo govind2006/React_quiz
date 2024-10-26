@@ -14,7 +14,7 @@ export type AnserObject = {
 }
 
 
-const TOTAL_QUESTIONS = 2;
+const TOTAL_QUESTIONS = 10;
 
 function App() {
   const [loading,setLoading]=useState(false);
