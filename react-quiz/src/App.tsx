@@ -24,7 +24,6 @@ function App() {
   const[score,setScore] = useState(0);
   const [gameover,setGameOver]=useState(true);
 
-  // console.log(questions);
 
   const startTrivia = async()=>{
     setLoading(true);
@@ -38,8 +37,6 @@ function App() {
     setUserAnswer([]);
     setNumber(0);
     setLoading(false);
-
-
   }
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -84,15 +81,16 @@ function App() {
         <h1>REACT QUIZ</h1>
         {gameover || userAnswers.length===TOTAL_QUESTIONS ? (
         <button className='start' onClick={startTrivia}>
-          start
+          Start
         </button>
         ):null}
 
         {!gameover && userAnswers.length===TOTAL_QUESTIONS ? (
-           <p className='score'>Score : {score}</p>
+           <p className='score'>Your Score : {score}/{TOTAL_QUESTIONS}</p>
         ):null}
 
-        {loading && <p>Loading Questions...</p>}
+        {loading &&<p>Loading Questions...</p>}
+        {loading && <div id="loader"></div>}
 
       {!loading && !gameover  && (
         <QuestionCard
