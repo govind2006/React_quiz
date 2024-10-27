@@ -25,13 +25,15 @@ export const fetchQuizQuestions = async (TOTAL_QUESTIONS: number, difficulty: Di
     const endpoint = `https://react-api-7xil.onrender.com/`;
   
     try {
+      console.log("Govind1")
       const response = await fetch(endpoint);
       if (!response.ok) {
+        console.log("Govind",response)
         throw new Error(`Failed to fetch quiz questions: ${response.statusText}`);
       }
   
       const data = await response.json();
-  
+      console.log("Gvoind",data)
       if (!data.results || !Array.isArray(data.results)) {
         throw new Error("API response does not contain results");
       }

@@ -1,8 +1,11 @@
 import express from 'express';
-import bodyParser from 'body-parser';
+import cors from 'cors'; // Import CORS
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Use CORS middleware
+app.use(cors());
 
 const quizData = {
   'response_code': 0,
