@@ -13,7 +13,288 @@ app.use(cors());
 
 const quizData = {
   'response_code': 0,
-  'results': [{"question": "In web design, what does CSS stand for?", "correct_answer": "Cascading Style Sheet", "incorrect_answers": ["Counter Strike: Source", "Corrective Style Sheet", "Computer Style Sheet"]}, {"question": "What does 'GUI' stand for?", "correct_answer": "Graphical User Interface", "incorrect_answers": ["Global User Interface", "Graphical Universal Interface", "General Utility Interface"]}, {"question": "What programming language shares its name with an island?", "correct_answer": "Java", "incorrect_answers": ["Python", "C", "Kotlin"]}, {"question": "What does 'HTML' stand for?", "correct_answer": "Hypertext Markup Language", "incorrect_answers": ["Hyper Tool Markup Language", "Hyperlink Markup Language", "Hyperlink and Text Markup Language"]}, {"question": "What is the main language used for Android development?", "correct_answer": "Java", "incorrect_answers": ["Swift", "Python", "Ruby"]}, {"question": "Sample question 6?", "correct_answer": "Correct answer 6", "incorrect_answers": ["Incorrect answer 6a", "Incorrect answer 6b", "Incorrect answer 6c"]}, {"question": "Sample question 7?", "correct_answer": "Correct answer 7", "incorrect_answers": ["Incorrect answer 7a", "Incorrect answer 7b", "Incorrect answer 7c"]}, {"question": "Sample question 8?", "correct_answer": "Correct answer 8", "incorrect_answers": ["Incorrect answer 8a", "Incorrect answer 8b", "Incorrect answer 8c"]}, {"question": "Sample question 9?", "correct_answer": "Correct answer 9", "incorrect_answers": ["Incorrect answer 9a", "Incorrect answer 9b", "Incorrect answer 9c"]}, {"question": "Sample question 10?", "correct_answer": "Correct answer 10", "incorrect_answers": ["Incorrect answer 10a", "Incorrect answer 10b", "Incorrect answer 10c"]}, {"question": "Sample question 11?", "correct_answer": "Correct answer 11", "incorrect_answers": ["Incorrect answer 11a", "Incorrect answer 11b", "Incorrect answer 11c"]}, {"question": "Sample question 12?", "correct_answer": "Correct answer 12", "incorrect_answers": ["Incorrect answer 12a", "Incorrect answer 12b", "Incorrect answer 12c"]}, {"question": "Sample question 13?", "correct_answer": "Correct answer 13", "incorrect_answers": ["Incorrect answer 13a", "Incorrect answer 13b", "Incorrect answer 13c"]}, {"question": "Sample question 14?", "correct_answer": "Correct answer 14", "incorrect_answers": ["Incorrect answer 14a", "Incorrect answer 14b", "Incorrect answer 14c"]}, {"question": "Sample question 15?", "correct_answer": "Correct answer 15", "incorrect_answers": ["Incorrect answer 15a", "Incorrect answer 15b", "Incorrect answer 15c"]}, {"question": "Sample question 16?", "correct_answer": "Correct answer 16", "incorrect_answers": ["Incorrect answer 16a", "Incorrect answer 16b", "Incorrect answer 16c"]}, {"question": "Sample question 17?", "correct_answer": "Correct answer 17", "incorrect_answers": ["Incorrect answer 17a", "Incorrect answer 17b", "Incorrect answer 17c"]}, {"question": "Sample question 18?", "correct_answer": "Correct answer 18", "incorrect_answers": ["Incorrect answer 18a", "Incorrect answer 18b", "Incorrect answer 18c"]}, {"question": "Sample question 19?", "correct_answer": "Correct answer 19", "incorrect_answers": ["Incorrect answer 19a", "Incorrect answer 19b", "Incorrect answer 19c"]}, {"question": "Sample question 20?", "correct_answer": "Correct answer 20", "incorrect_answers": ["Incorrect answer 20a", "Incorrect answer 20b", "Incorrect answer 20c"]}, {"question": "Sample question 21?", "correct_answer": "Correct answer 21", "incorrect_answers": ["Incorrect answer 21a", "Incorrect answer 21b", "Incorrect answer 21c"]}, {"question": "Sample question 22?", "correct_answer": "Correct answer 22", "incorrect_answers": ["Incorrect answer 22a", "Incorrect answer 22b", "Incorrect answer 22c"]}, {"question": "Sample question 23?", "correct_answer": "Correct answer 23", "incorrect_answers": ["Incorrect answer 23a", "Incorrect answer 23b", "Incorrect answer 23c"]}, {"question": "Sample question 24?", "correct_answer": "Correct answer 24", "incorrect_answers": ["Incorrect answer 24a", "Incorrect answer 24b", "Incorrect answer 24c"]}, {"question": "Sample question 25?", "correct_answer": "Correct answer 25", "incorrect_answers": ["Incorrect answer 25a", "Incorrect answer 25b", "Incorrect answer 25c"]}, {"question": "Sample question 26?", "correct_answer": "Correct answer 26", "incorrect_answers": ["Incorrect answer 26a", "Incorrect answer 26b", "Incorrect answer 26c"]}, {"question": "Sample question 27?", "correct_answer": "Correct answer 27", "incorrect_answers": ["Incorrect answer 27a", "Incorrect answer 27b", "Incorrect answer 27c"]}, {"question": "Sample question 28?", "correct_answer": "Correct answer 28", "incorrect_answers": ["Incorrect answer 28a", "Incorrect answer 28b", "Incorrect answer 28c"]}, {"question": "Sample question 29?", "correct_answer": "Correct answer 29", "incorrect_answers": ["Incorrect answer 29a", "Incorrect answer 29b", "Incorrect answer 29c"]}, {"question": "Sample question 30?", "correct_answer": "Correct answer 30", "incorrect_answers": ["Incorrect answer 30a", "Incorrect answer 30b", "Incorrect answer 30c"]}, {"question": "Sample question 31?", "correct_answer": "Correct answer 31", "incorrect_answers": ["Incorrect answer 31a", "Incorrect answer 31b", "Incorrect answer 31c"]}, {"question": "Sample question 32?", "correct_answer": "Correct answer 32", "incorrect_answers": ["Incorrect answer 32a", "Incorrect answer 32b", "Incorrect answer 32c"]}, {"question": "Sample question 33?", "correct_answer": "Correct answer 33", "incorrect_answers": ["Incorrect answer 33a", "Incorrect answer 33b", "Incorrect answer 33c"]}, {"question": "Sample question 34?", "correct_answer": "Correct answer 34", "incorrect_answers": ["Incorrect answer 34a", "Incorrect answer 34b", "Incorrect answer 34c"]}, {"question": "Sample question 35?", "correct_answer": "Correct answer 35", "incorrect_answers": ["Incorrect answer 35a", "Incorrect answer 35b", "Incorrect answer 35c"]}, {"question": "Sample question 36?", "correct_answer": "Correct answer 36", "incorrect_answers": ["Incorrect answer 36a", "Incorrect answer 36b", "Incorrect answer 36c"]}, {"question": "Sample question 37?", "correct_answer": "Correct answer 37", "incorrect_answers": ["Incorrect answer 37a", "Incorrect answer 37b", "Incorrect answer 37c"]}, {"question": "Sample question 38?", "correct_answer": "Correct answer 38", "incorrect_answers": ["Incorrect answer 38a", "Incorrect answer 38b", "Incorrect answer 38c"]}, {"question": "Sample question 39?", "correct_answer": "Correct answer 39", "incorrect_answers": ["Incorrect answer 39a", "Incorrect answer 39b", "Incorrect answer 39c"]}, {"question": "Sample question 40?", "correct_answer": "Correct answer 40", "incorrect_answers": ["Incorrect answer 40a", "Incorrect answer 40b", "Incorrect answer 40c"]}, {"question": "Sample question 41?", "correct_answer": "Correct answer 41", "incorrect_answers": ["Incorrect answer 41a", "Incorrect answer 41b", "Incorrect answer 41c"]}, {"question": "Sample question 42?", "correct_answer": "Correct answer 42", "incorrect_answers": ["Incorrect answer 42a", "Incorrect answer 42b", "Incorrect answer 42c"]}, {"question": "Sample question 43?", "correct_answer": "Correct answer 43", "incorrect_answers": ["Incorrect answer 43a", "Incorrect answer 43b", "Incorrect answer 43c"]}, {"question": "Sample question 44?", "correct_answer": "Correct answer 44", "incorrect_answers": ["Incorrect answer 44a", "Incorrect answer 44b", "Incorrect answer 44c"]}, {"question": "Sample question 45?", "correct_answer": "Correct answer 45", "incorrect_answers": ["Incorrect answer 45a", "Incorrect answer 45b", "Incorrect answer 45c"]}, {"question": "Sample question 46?", "correct_answer": "Correct answer 46", "incorrect_answers": ["Incorrect answer 46a", "Incorrect answer 46b", "Incorrect answer 46c"]}, {"question": "Sample question 47?", "correct_answer": "Correct answer 47", "incorrect_answers": ["Incorrect answer 47a", "Incorrect answer 47b", "Incorrect answer 47c"]}, {"question": "Sample question 48?", "correct_answer": "Correct answer 48", "incorrect_answers": ["Incorrect answer 48a", "Incorrect answer 48b", "Incorrect answer 48c"]}, {"question": "Sample question 49?", "correct_answer": "Correct answer 49", "incorrect_answers": ["Incorrect answer 49a", "Incorrect answer 49b", "Incorrect answer 49c"]}, {"question": "Sample question 50?", "correct_answer": "Correct answer 50", "incorrect_answers": ["Incorrect answer 50a", "Incorrect answer 50b", "Incorrect answer 50c"]}, {"question": "Sample question 51?", "correct_answer": "Correct answer 51", "incorrect_answers": ["Incorrect answer 51a", "Incorrect answer 51b", "Incorrect answer 51c"]}, {"question": "Sample question 52?", "correct_answer": "Correct answer 52", "incorrect_answers": ["Incorrect answer 52a", "Incorrect answer 52b", "Incorrect answer 52c"]}, {"question": "Sample question 53?", "correct_answer": "Correct answer 53", "incorrect_answers": ["Incorrect answer 53a", "Incorrect answer 53b", "Incorrect answer 53c"]}, {"question": "Sample question 54?", "correct_answer": "Correct answer 54", "incorrect_answers": ["Incorrect answer 54a", "Incorrect answer 54b", "Incorrect answer 54c"]}, {"question": "Sample question 55?", "correct_answer": "Correct answer 55", "incorrect_answers": ["Incorrect answer 55a", "Incorrect answer 55b", "Incorrect answer 55c"]}, {"question": "Sample question 56?", "correct_answer": "Correct answer 56", "incorrect_answers": ["Incorrect answer 56a", "Incorrect answer 56b", "Incorrect answer 56c"]}, {"question": "Sample question 57?", "correct_answer": "Correct answer 57", "incorrect_answers": ["Incorrect answer 57a", "Incorrect answer 57b", "Incorrect answer 57c"]}, {"question": "Sample question 58?", "correct_answer": "Correct answer 58", "incorrect_answers": ["Incorrect answer 58a", "Incorrect answer 58b", "Incorrect answer 58c"]}, {"question": "Sample question 59?", "correct_answer": "Correct answer 59", "incorrect_answers": ["Incorrect answer 59a", "Incorrect answer 59b", "Incorrect answer 59c"]}, {"question": "Sample question 60?", "correct_answer": "Correct answer 60", "incorrect_answers": ["Incorrect answer 60a", "Incorrect answer 60b", "Incorrect answer 60c"]}, {"question": "Sample question 61?", "correct_answer": "Correct answer 61", "incorrect_answers": ["Incorrect answer 61a", "Incorrect answer 61b", "Incorrect answer 61c"]}, {"question": "Sample question 62?", "correct_answer": "Correct answer 62", "incorrect_answers": ["Incorrect answer 62a", "Incorrect answer 62b", "Incorrect answer 62c"]}, {"question": "Sample question 63?", "correct_answer": "Correct answer 63", "incorrect_answers": ["Incorrect answer 63a", "Incorrect answer 63b", "Incorrect answer 63c"]}, {"question": "Sample question 64?", "correct_answer": "Correct answer 64", "incorrect_answers": ["Incorrect answer 64a", "Incorrect answer 64b", "Incorrect answer 64c"]}, {"question": "Sample question 65?", "correct_answer": "Correct answer 65", "incorrect_answers": ["Incorrect answer 65a", "Incorrect answer 65b", "Incorrect answer 65c"]}, {"question": "Sample question 66?", "correct_answer": "Correct answer 66", "incorrect_answers": ["Incorrect answer 66a", "Incorrect answer 66b", "Incorrect answer 66c"]}, {"question": "Sample question 67?", "correct_answer": "Correct answer 67", "incorrect_answers": ["Incorrect answer 67a", "Incorrect answer 67b", "Incorrect answer 67c"]}, {"question": "Sample question 68?", "correct_answer": "Correct answer 68", "incorrect_answers": ["Incorrect answer 68a", "Incorrect answer 68b", "Incorrect answer 68c"]}, {"question": "Sample question 69?", "correct_answer": "Correct answer 69", "incorrect_answers": ["Incorrect answer 69a", "Incorrect answer 69b", "Incorrect answer 69c"]}, {"question": "Sample question 70?", "correct_answer": "Correct answer 70", "incorrect_answers": ["Incorrect answer 70a", "Incorrect answer 70b", "Incorrect answer 70c"]}, {"question": "Sample question 71?", "correct_answer": "Correct answer 71", "incorrect_answers": ["Incorrect answer 71a", "Incorrect answer 71b", "Incorrect answer 71c"]}, {"question": "Sample question 72?", "correct_answer": "Correct answer 72", "incorrect_answers": ["Incorrect answer 72a", "Incorrect answer 72b", "Incorrect answer 72c"]}, {"question": "Sample question 73?", "correct_answer": "Correct answer 73", "incorrect_answers": ["Incorrect answer 73a", "Incorrect answer 73b", "Incorrect answer 73c"]}, {"question": "Sample question 74?", "correct_answer": "Correct answer 74", "incorrect_answers": ["Incorrect answer 74a", "Incorrect answer 74b", "Incorrect answer 74c"]}, {"question": "Sample question 75?", "correct_answer": "Correct answer 75", "incorrect_answers": ["Incorrect answer 75a", "Incorrect answer 75b", "Incorrect answer 75c"]}, {"question": "Sample question 76?", "correct_answer": "Correct answer 76", "incorrect_answers": ["Incorrect answer 76a", "Incorrect answer 76b", "Incorrect answer 76c"]}, {"question": "Sample question 77?", "correct_answer": "Correct answer 77", "incorrect_answers": ["Incorrect answer 77a", "Incorrect answer 77b", "Incorrect answer 77c"]}, {"question": "Sample question 78?", "correct_answer": "Correct answer 78", "incorrect_answers": ["Incorrect answer 78a", "Incorrect answer 78b", "Incorrect answer 78c"]}, {"question": "Sample question 79?", "correct_answer": "Correct answer 79", "incorrect_answers": ["Incorrect answer 79a", "Incorrect answer 79b", "Incorrect answer 79c"]}, {"question": "Sample question 80?", "correct_answer": "Correct answer 80", "incorrect_answers": ["Incorrect answer 80a", "Incorrect answer 80b", "Incorrect answer 80c"]}, {"question": "Sample question 81?", "correct_answer": "Correct answer 81", "incorrect_answers": ["Incorrect answer 81a", "Incorrect answer 81b", "Incorrect answer 81c"]}, {"question": "Sample question 82?", "correct_answer": "Correct answer 82", "incorrect_answers": ["Incorrect answer 82a", "Incorrect answer 82b", "Incorrect answer 82c"]}, {"question": "Sample question 83?", "correct_answer": "Correct answer 83", "incorrect_answers": ["Incorrect answer 83a", "Incorrect answer 83b", "Incorrect answer 83c"]}, {"question": "Sample question 84?", "correct_answer": "Correct answer 84", "incorrect_answers": ["Incorrect answer 84a", "Incorrect answer 84b", "Incorrect answer 84c"]}, {"question": "Sample question 85?", "correct_answer": "Correct answer 85", "incorrect_answers": ["Incorrect answer 85a", "Incorrect answer 85b", "Incorrect answer 85c"]}, {"question": "Sample question 86?", "correct_answer": "Correct answer 86", "incorrect_answers": ["Incorrect answer 86a", "Incorrect answer 86b", "Incorrect answer 86c"]}, {"question": "Sample question 87?", "correct_answer": "Correct answer 87", "incorrect_answers": ["Incorrect answer 87a", "Incorrect answer 87b", "Incorrect answer 87c"]}, {"question": "Sample question 88?", "correct_answer": "Correct answer 88", "incorrect_answers": ["Incorrect answer 88a", "Incorrect answer 88b", "Incorrect answer 88c"]}, {"question": "Sample question 89?", "correct_answer": "Correct answer 89", "incorrect_answers": ["Incorrect answer 89a", "Incorrect answer 89b", "Incorrect answer 89c"]}, {"question": "Sample question 90?", "correct_answer": "Correct answer 90", "incorrect_answers": ["Incorrect answer 90a", "Incorrect answer 90b", "Incorrect answer 90c"]}, {"question": "Sample question 91?", "correct_answer": "Correct answer 91", "incorrect_answers": ["Incorrect answer 91a", "Incorrect answer 91b", "Incorrect answer 91c"]}, {"question": "Sample question 92?", "correct_answer": "Correct answer 92", "incorrect_answers": ["Incorrect answer 92a", "Incorrect answer 92b", "Incorrect answer 92c"]}, {"question": "Sample question 93?", "correct_answer": "Correct answer 93", "incorrect_answers": ["Incorrect answer 93a", "Incorrect answer 93b", "Incorrect answer 93c"]}, {"question": "Sample question 94?", "correct_answer": "Correct answer 94", "incorrect_answers": ["Incorrect answer 94a", "Incorrect answer 94b", "Incorrect answer 94c"]}, {"question": "Sample question 95?", "correct_answer": "Correct answer 95", "incorrect_answers": ["Incorrect answer 95a", "Incorrect answer 95b", "Incorrect answer 95c"]}, {"question": "Sample question 96?", "correct_answer": "Correct answer 96", "incorrect_answers": ["Incorrect answer 96a", "Incorrect answer 96b", "Incorrect answer 96c"]}, {"question": "Sample question 97?", "correct_answer": "Correct answer 97", "incorrect_answers": ["Incorrect answer 97a", "Incorrect answer 97b", "Incorrect answer 97c"]}, {"question": "Sample question 98?", "correct_answer": "Correct answer 98", "incorrect_answers": ["Incorrect answer 98a", "Incorrect answer 98b", "Incorrect answer 98c"]}, {"question": "Sample question 99?", "correct_answer": "Correct answer 99", "incorrect_answers": ["Incorrect answer 99a", "Incorrect answer 99b", "Incorrect answer 99c"]}]
+  'results': 
+  [
+    {
+        "question": "In web design, what does CSS stand for?",
+        "correct_answer": "Cascading Style Sheet",
+        "incorrect_answers": [
+            "Counter Strike: Source",
+            "Corrective Style Sheet",
+            "Computer Style Sheet"
+        ]
+    },
+    {
+        "question": "What does 'GUI' stand for?",
+        "correct_answer": "Graphical User Interface",
+        "incorrect_answers": [
+            "Global User Interface",
+            "Graphical Universal Interface",
+            "General Utility Interface"
+        ]
+    },
+    {
+        "question": "What programming language shares its name with an island?",
+        "correct_answer": "Java",
+        "incorrect_answers": [
+            "Python",
+            "C",
+            "Kotlin"
+        ]
+    },
+    {
+        "question": "What does 'HTML' stand for?",
+        "correct_answer": "Hypertext Markup Language",
+        "incorrect_answers": [
+            "Hyper Tool Markup Language",
+            "Hyperlink Markup Language",
+            "Hyperlink and Text Markup Language"
+        ]
+    },
+    {
+        "question": "What is the main language used for Android development?",
+        "correct_answer": "Java",
+        "incorrect_answers": [
+            "Swift",
+            "Python",
+            "Ruby"
+        ]
+    },
+    {
+        "question": "Which of these is a binary search algorithm that divides the list in half each time?",
+        "correct_answer": "Binary Search",
+        "incorrect_answers": [
+            "Linear Search",
+            "Depth-First Search",
+            "Breadth-First Search"
+        ]
+    },
+    {
+        "question": "What does 'CPU' stand for?",
+        "correct_answer": "Central Processing Unit",
+        "incorrect_answers": [
+            "Central Process Unit",
+            "Computer Personal Unit",
+            "Central Processor Unit"
+        ]
+    },
+    {
+        "question": "In programming, what does 'IDE' stand for?",
+        "correct_answer": "Integrated Development Environment",
+        "incorrect_answers": [
+            "Integrated Debug Environment",
+            "Internal Development Environment",
+            "Intelligent Development Environment"
+        ]
+    },
+    {
+        "question": "Who is considered the 'father' of computer science?",
+        "correct_answer": "Alan Turing",
+        "incorrect_answers": [
+            "Bill Gates",
+            "Steve Jobs",
+            "Charles Babbage"
+        ]
+    },
+    {
+        "question": "Which company created the iPhone?",
+        "correct_answer": "Apple",
+        "incorrect_answers": [
+            "Microsoft",
+            "Samsung",
+            "Google"
+        ]
+    },
+    {
+        "question": "In computer science, what does the 'FIFO' principle mean?",
+        "correct_answer": "First In, First Out",
+        "incorrect_answers": [
+            "Fast In, Fast Out",
+            "First Input, First Output",
+            "First In, Final Out"
+        ]
+    },
+    {
+        "question": "Which programming language is primarily used for iOS app development?",
+        "correct_answer": "Swift",
+        "incorrect_answers": [
+            "Kotlin",
+            "Python",
+            "Ruby"
+        ]
+    },
+    {
+        "question": "What does 'HTTP' stand for?",
+        "correct_answer": "Hypertext Transfer Protocol",
+        "incorrect_answers": [
+            "Hyperlink Text Transfer Protocol",
+            "Hyperlink Transfer Protocol",
+            "Hypertext Transmission Protocol"
+        ]
+    },
+    {
+        "question": "What is the most popular database management system?",
+        "correct_answer": "MySQL",
+        "incorrect_answers": [
+            "PostgreSQL",
+            "MongoDB",
+            "SQLite"
+        ]
+    },
+    {
+        "question": "Which language is primarily used for machine learning and AI?",
+        "correct_answer": "Python",
+        "incorrect_answers": [
+            "Java",
+            "C++",
+            "Ruby"
+        ]
+    },
+    {
+        "question": "What is the main purpose of the Git version control system?",
+        "correct_answer": "Tracking changes in source code",
+        "incorrect_answers": [
+            "Managing project dependencies",
+            "Compiling code",
+            "Generating documentation"
+        ]
+    },
+    {
+        "question": "What does 'SQL' stand for?",
+        "correct_answer": "Structured Query Language",
+        "incorrect_answers": [
+            "Simple Query Language",
+            "Statement Query Language",
+            "Sequential Query Language"
+        ]
+    },
+    {
+        "question": "Which company developed the programming language TypeScript?",
+        "correct_answer": "Microsoft",
+        "incorrect_answers": [
+            "Google",
+            "Facebook",
+            "Amazon"
+        ]
+    },
+    {
+        "question": "Which language is commonly used for web development on the server side?",
+        "correct_answer": "PHP",
+        "incorrect_answers": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    },
+    {
+        "question": "What does 'XML' stand for?",
+        "correct_answer": "Extensible Markup Language",
+        "incorrect_answers": [
+            "Extended Markup Language",
+            "Executable Markup Language",
+            "External Markup Language"
+        ]
+    },
+    {
+        "question": "Which operating system is developed by Apple Inc.?",
+        "correct_answer": "macOS",
+        "incorrect_answers": [
+            "Windows",
+            "Linux",
+            "Unix"
+        ]
+    },
+    {
+        "question": "What does the acronym 'API' stand for?",
+        "correct_answer": "Application Programming Interface",
+        "incorrect_answers": [
+            "Application Protocol Interface",
+            "Advanced Programming Interface",
+            "Automated Programming Interface"
+        ]
+    },
+    {
+        "question": "What language is used for developing iOS and macOS applications?",
+        "correct_answer": "Swift",
+        "incorrect_answers": [
+            "Java",
+            "Kotlin",
+            "Objective-C"
+        ]
+    },
+    {
+        "question": "What does 'RAM' stand for?",
+        "correct_answer": "Random Access Memory",
+        "incorrect_answers": [
+            "Rapid Access Memory",
+            "Read Access Memory",
+            "Runtime Access Memory"
+        ]
+    },
+    {
+        "question": "What is the main difference between RAM and ROM?",
+        "correct_answer": "RAM is volatile, ROM is non-volatile",
+        "incorrect_answers": [
+            "RAM is slower than ROM",
+            "ROM is used for temporary storage",
+            "RAM cannot be accessed randomly"
+        ]
+    },
+    {
+        "question": "What does the 'OOP' in programming stand for?",
+        "correct_answer": "Object-Oriented Programming",
+        "incorrect_answers": [
+            "Object-Oriented Process",
+            "Object-Oriented Performance",
+            "Object Operational Programming"
+        ]
+    },
+    {
+        "question": "What does 'BIOS' stand for in computer terminology?",
+        "correct_answer": "Basic Input Output System",
+        "incorrect_answers": [
+            "Binary Input Output System",
+            "Basic Internal Operating System",
+            "Binary Internal Operating System"
+        ]
+    },
+    {
+        "question": "Which device is used as the brain of the computer?",
+        "correct_answer": "CPU",
+        "incorrect_answers": [
+            "RAM",
+            "Motherboard",
+            "Hard Drive"
+        ]
+    },
+    {
+        "question": "What does the term 'debugging' mean?",
+        "correct_answer": "Fixing errors in the code",
+        "incorrect_answers": [
+            "Writing new code",
+            "Compiling code",
+            "Removing outdated code"
+        ]
+    },
+    {
+        "question": "Which language is primarily used for building web pages?",
+        "correct_answer": "HTML",
+        "incorrect_answers": [
+            "Python",
+            "Java",
+            "SQL"
+        ]
+    },
+    {
+        "question": "What is an example of a version control system?",
+        "correct_answer": "Git",
+        "incorrect_answers": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    }
+]
 };
 
 app.get('/', (req, res) => {
