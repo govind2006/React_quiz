@@ -35,8 +35,10 @@ export const fetchQuizQuestions = async (TOTAL_QUESTIONS: number, difficulty: Di
       if (!data.results || !Array.isArray(data.results)) {
         throw new Error("API response does not contain results");
       }
+
+      const shuffledQuestions = shuffleArray(data.results);
   
-      return data.results.map((question: Question) => ({
+      return shuffledQuestions.map((question: Question) => ({
         ...question,
         answers: shuffleArray([
           ...question.incorrect_answers,
