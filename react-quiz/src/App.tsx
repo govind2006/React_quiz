@@ -78,15 +78,16 @@ function App() {
     <>
     <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>CS QUIZ</h1> <br /><br />
         {gameover || userAnswers.length===TOTAL_QUESTIONS ? (
         <button className='start' onClick={startTrivia}>
-          Start
+        {userAnswers.length===TOTAL_QUESTIONS ? 'Restart' : 'Start'}
         </button>
         ):null}
 
+
         {!gameover && userAnswers.length===TOTAL_QUESTIONS ? (
-           <p className='score'>Your Score : {score}/{TOTAL_QUESTIONS}</p>
+           <p className='score'>Congratulations 🎉 Your Score : {score}/{TOTAL_QUESTIONS}</p>
         ):null}
 
         {loading &&<p>Loading Questions...</p>}
