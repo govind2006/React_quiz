@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 // Components
-import { fetchQuizQuestions,Difficulty,QuestionStste } from './API';
+import { fetchQuizQuestions,QuestionState } from './API';
 
 import QuestionCard from './components/QuestionCard';
 
@@ -18,18 +18,18 @@ const TOTAL_QUESTIONS = 10;
 
 function App() {
   const [loading,setLoading]=useState(false);
-  const [questions,setQuestions]=useState<QuestionStste[]>([]);
+  const [questions,setQuestions]=useState<QuestionState[]>([]);
   const [number,setNumber] = useState(0);
   const[userAnswers,setUserAnswer]=useState<AnserObject[]>([])
   const[score,setScore] = useState(0);
   const [gameover,setGameOver]=useState(true);
 
 
-  const startTrivia = async()=>{
+  const startTrivia = async()=>{ 
     setLoading(true);
     setGameOver(false);
 
-    const newQuestions = await fetchQuizQuestions(TOTAL_QUESTIONS,Difficulty.EASY);
+    const newQuestions = await fetchQuizQuestions();
 
     setQuestions(newQuestions);
 

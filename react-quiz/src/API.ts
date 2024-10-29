@@ -2,25 +2,16 @@
 import { shuffleArray } from "./utils";
 
 export type Question = {
-    category:string;
     correct_answer:string;
-    difficulty:string;
     incorrect_answers:string[];
     question:string;
-    type:string;
 
 }
 
-export type QuestionStste = Question & {answers:string[]};
+export type QuestionState = Question & {answers:string[]};
 
 
-export enum Difficulty{
-    EASY="easy",
-    MEDIUM="medium",
-    HARD="hard"
-}
-
-export const fetchQuizQuestions = async (TOTAL_QUESTIONS: number, difficulty: Difficulty) => {
+export const fetchQuizQuestions = async () => {
     // const endpoint = `https://opentdb.com/api.php?amount=${TOTAL_QUESTIONS}&category=${18}&difficulty=${difficulty}&type=multiple`;
     const endpoint = `https://react-api-7xil.onrender.com/`;
   
@@ -31,7 +22,6 @@ export const fetchQuizQuestions = async (TOTAL_QUESTIONS: number, difficulty: Di
       }
   
       const data = await response.json();
-      console.log("Gvoind",data)
       if (!data.results || !Array.isArray(data.results)) {
         throw new Error("API response does not contain results");
       }
